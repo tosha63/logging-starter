@@ -3,11 +3,12 @@
   <groupId>ru.shtanko</groupId>
   <artifactId>logging-starter</artifactId>
   <versioning>
-    <latest>1.1-SNAPSHOT</latest>
+    <latest>1.2-SNAPSHOT</latest>
     <versions>
       <version>1.0-SNAPSHOT</version>
       <version>1.1-SNAPSHOT</version>
+      <version>1.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20250809090628</lastUpdated>
+    <lastUpdated>20250809115340</lastUpdated>
   </versioning>
 </metadata>
