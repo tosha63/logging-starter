@@ -13,9 +13,9 @@ import org.springframework.web.util.ContentCachingResponseWrapper;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import static ru.shtanko.logginstarter.util.RequestBuilderUtil.formatQueryString;
-import static ru.shtanko.logginstarter.util.RequestBuilderUtil.inlineRequestHeaders;
-import static ru.shtanko.logginstarter.util.RequestBuilderUtil.inlineResponseHeaders;
+import static ru.shtanko.logginstarter.util.LoggingUtil.formatQueryString;
+import static ru.shtanko.logginstarter.util.LoggingUtil.inlineRequestHeaders;
+import static ru.shtanko.logginstarter.util.LoggingUtil.inlineResponseHeaders;
 
 
 @Component

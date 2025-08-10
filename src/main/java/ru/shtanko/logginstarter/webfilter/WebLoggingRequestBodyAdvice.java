@@ -12,7 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdviceAd
 
 import java.lang.reflect.Type;
 
-import static ru.shtanko.logginstarter.util.RequestBuilderUtil.formatQueryString;
+import static ru.shtanko.logginstarter.util.LoggingUtil.formatQueryString;
 
 
 @ControllerAdvice
