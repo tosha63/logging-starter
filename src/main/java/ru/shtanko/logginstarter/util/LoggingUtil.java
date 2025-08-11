@@ -54,6 +54,6 @@ public class LoggingUtil {
 
     private boolean shouldMask(String headerName) {
         return properties.getHeaders().stream()
-                .anyMatch(pattern -> headerName.toLowerCase().matches(pattern.toLowerCase()));
+                .anyMatch(headerName::equalsIgnoreCase);
     }
 }
