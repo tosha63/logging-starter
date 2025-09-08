@@ -54,7 +54,7 @@ public class LoggingService {
         log.info("Ответ: {} {} {} {} {} {}", RequestDirection.IN, method, requestURI, response.getStatus(), responseHeaders, responseBody);
     }
 
-    public void logResponse(HttpServletRequest request, Object body) {
+    public void logRequestBody(HttpServletRequest request, Object body) {
         String method = request.getMethod();
         String requestURI = request.getRequestURI() + formatQueryString(request);
 

@@ -37,7 +37,7 @@ public class WebLoggingRequestBodyAdvice extends RequestBodyAdviceAdapter {
             return super.afterBodyRead(body, inputMessage, parameter, targetType, converterType);
         }
 
-        loggingService.logResponse(request, body);
+        loggingService.logRequestBody(request, body);
 
         return super.afterBodyRead(body, inputMessage, parameter, targetType, converterType);
     }
