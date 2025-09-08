@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.shtanko",
+    "module": "logging-starter",
+    "version": "1.5-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "logging-starter-1.5-SNAPSHOT.jar",
+          "url": "logging-starter-1.5-SNAPSHOT.jar",
+          "size": 16278,
+          "sha512": "a359a7559a81fca4addf009e5ef9a1eed56f61dd10d426b1a4ae0baf4cba91f2266eb08f3f14352e6219a8ed0cfc7482639fe84cef6d79dd2728f2d96ef5c4ef",
+          "sha256": "d2a98705a0c9eae2b21404818fc65223d57e3d4de97ec8c3f04bab86d3f7aa57",
+          "sha1": "f887cd0b599492cb77d1d3c6884839b220cba419",
+          "md5": "80ee42f973ab966fb7f0ffaf7df4246d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
+          "version": {
+            "requires": "3.2.5"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-aop",
+          "version": {
+            "requires": "3.2.5"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-openfeign",
+          "version": {
+            "requires": "4.1.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logging-starter-1.5-SNAPSHOT.jar",
+          "url": "logging-starter-1.5-SNAPSHOT.jar",
+          "size": 16278,
+          "sha512": "a359a7559a81fca4addf009e5ef9a1eed56f61dd10d426b1a4ae0baf4cba91f2266eb08f3f14352e6219a8ed0cfc7482639fe84cef6d79dd2728f2d96ef5c4ef",
+          "sha256": "d2a98705a0c9eae2b21404818fc65223d57e3d4de97ec8c3f04bab86d3f7aa57",
+          "sha1": "f887cd0b599492cb77d1d3c6884839b220cba419",
+          "md5": "80ee42f973ab966fb7f0ffaf7df4246d"
+        }
+      ]
+    }
+  ]
+}
