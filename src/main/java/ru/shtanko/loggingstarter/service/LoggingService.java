@@ -1,4 +1,4 @@
-package ru.shtanko.logginstarter.service;
+package ru.shtanko.loggingstarter.service;
 
 import feign.Request;
 import feign.Response;
@@ -9,8 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.shtanko.logginstarter.dto.RequestDirection;
-import ru.shtanko.logginstarter.properties.MaskConfigurationProperties;
+import ru.shtanko.loggingstarter.dto.RequestDirection;
+import ru.shtanko.loggingstarter.properties.MaskConfigurationProperties;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Collection;

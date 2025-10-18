@@ -60,3 +60,17 @@ logging:
 | **logging.web-logging.exclude-endpoints**   | Можно указать список эндпоинтов, для которых будет отключено логгирование входящих и исходящих HTTP-запросов                                   |
 | **logging.mask.headers**                    | Можно указать список заголовков, для которых стоит применить маскирование, если это необходимо                                                 |
 
+Так же стартер выполняет трассировку и выводит стандартизированный формат логов при подключении конфига
+
+```yaml
+logging:
+  web-logging:
+    log-feign-requests: true //подключается дополнительный бин для автоматического добавления заголовков OpenTelemetry трассировки в Feign запросы
+  file:
+    enabled: false //можно настроить логгирование в файл при включении в true 
+    path: ./logs  //можно указать путь куда будет сохраняться файл лога
+    name: ${spring.application.name} //можно указать имя файла лога
+  logstash:
+    enabled: false //отправка файла в logstash
+  config: classpath:ru/shtanko/loggingstarter/logback-spring.xml //конфигурация
+```

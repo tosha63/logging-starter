@@ -1,17 +1,18 @@
-package ru.shtanko.logginstarter;
+package ru.shtanko.loggingstarter;
 
 import feign.Logger;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import ru.shtanko.logginstarter.aspect.LogExecutionAspect;
-import ru.shtanko.logginstarter.feign.FeignRequestLogger;
-import ru.shtanko.logginstarter.properties.LoggingConfigurationProperties;
-import ru.shtanko.logginstarter.properties.MaskConfigurationProperties;
-import ru.shtanko.logginstarter.service.LoggingService;
-import ru.shtanko.logginstarter.webfilter.WebLoggingFilter;
-import ru.shtanko.logginstarter.webfilter.WebLoggingRequestBodyAdvice;
+import ru.shtanko.loggingstarter.aspect.LogExecutionAspect;
+import ru.shtanko.loggingstarter.feign.FeignRequestLogger;
+import ru.shtanko.loggingstarter.feign.config.TracingFeignRequestInterceptor;
+import ru.shtanko.loggingstarter.properties.LoggingConfigurationProperties;
+import ru.shtanko.loggingstarter.properties.MaskConfigurationProperties;
+import ru.shtanko.loggingstarter.service.LoggingService;
+import ru.shtanko.loggingstarter.webfilter.WebLoggingFilter;
+import ru.shtanko.loggingstarter.webfilter.WebLoggingRequestBodyAdvice;
 
 
 @AutoConfiguration
@@ -53,5 +54,11 @@ public class LoggingStarterAutoConfiguration {
     @ConditionalOnProperty(prefix = "logging.web-logging", value = "log-feign-requests", havingValue = "true")
     public Logger.Level feignLogLevel() {
         return Logger.Level.BASIC;
+    }
+
+    @Bean
+    @ConditionalOnProperty(prefix = "logging.web-logging", value = "log-feign-requests", havingValue = "true")
+    public TracingFeignRequestInterceptor tracingFeignRequestInterceptor() {
+        return new TracingFeignRequestInterceptor();
     }
 }
