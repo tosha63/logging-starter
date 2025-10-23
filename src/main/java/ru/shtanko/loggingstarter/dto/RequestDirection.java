@@ -1,4 +1,4 @@
-package ru.shtanko.logginstarter.dto;
+package ru.shtanko.loggingstarter.dto;
 
 public enum RequestDirection {
     IN,

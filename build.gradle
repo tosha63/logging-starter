@@ -1,10 +1,10 @@
 plugins {
-    id 'java'
+    id 'java-library'
     id 'maven-publish'
 }
 
 group = 'ru.shtanko'
-version = '1.5-SNAPSHOT'
+version = '1.1.0-SNAPSHOT'
 
 repositories {
     mavenLocal()
@@ -12,12 +12,30 @@ repositories {
 }
 
 def springVersion = '3.2.5'
+def openfeignVersion = '4.1.4'
+def logbackEncoderVersion = '7.3'
+def janinoVersion = '3.1.9'
+def micrometerContextPropagationVersion = '1.1.1'
+def micrometerTracingBridgeOtelVersion = '1.2.5'
+def openTelemetryVersion = '1.31.0'
+def datasourceObservationVersion = '1.0.5'
 
 dependencies {
     implementation "org.springframework.boot:spring-boot-starter-web:${springVersion}"
     implementation "org.springframework.boot:spring-boot-starter-aop:${springVersion}"
 
-    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:4.1.4"
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:${openfeignVersion}"
+
+    implementation "net.logstash.logback:logstash-logback-encoder:${logbackEncoderVersion}"
+    implementation "org.codehaus.janino:janino:${janinoVersion}"
+
+    api "io.micrometer:context-propagation:${micrometerContextPropagationVersion}"
+    api "io.micrometer:micrometer-tracing-bridge-otel:${micrometerTracingBridgeOtelVersion}"
+    api "io.opentelemetry:opentelemetry-exporter-otlp:${openTelemetryVersion}"
+    api "net.ttddyy.observation:datasource-micrometer-spring-boot:${datasourceObservationVersion}"
+    api "org.springframework.boot:spring-boot-starter-actuator:${springVersion}"
+
+
 }
 
 publishing {

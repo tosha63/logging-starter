@@ -1,11 +1,11 @@
-package ru.shtanko.logginstarter.feign;
+package ru.shtanko.loggingstarter.feign;
 
 import feign.Logger;
 import feign.Request;
 import feign.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StreamUtils;
-import ru.shtanko.logginstarter.service.LoggingService;
+import ru.shtanko.loggingstarter.service.LoggingService;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

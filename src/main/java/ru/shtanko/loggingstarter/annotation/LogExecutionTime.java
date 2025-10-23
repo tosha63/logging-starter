@@ -1,4 +1,4 @@
-package ru.shtanko.logginstarter.annotation;
+package ru.shtanko.loggingstarter.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

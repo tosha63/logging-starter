@@ -1,4 +1,4 @@
-package ru.shtanko.logginstarter.webfilter;
+package ru.shtanko.loggingstarter.webfilter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.util.ContentCachingResponseWrapper;
-import ru.shtanko.logginstarter.properties.LoggingConfigurationProperties;
-import ru.shtanko.logginstarter.service.LoggingService;
+import ru.shtanko.loggingstarter.properties.LoggingConfigurationProperties;
+import ru.shtanko.loggingstarter.service.LoggingService;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

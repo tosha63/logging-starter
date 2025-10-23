@@ -1,5 +1,5 @@
 
-package ru.shtanko.logginstarter.properties;
+package ru.shtanko.loggingstarter.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

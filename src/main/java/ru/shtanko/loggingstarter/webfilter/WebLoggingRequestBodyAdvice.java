@@ -1,4 +1,4 @@
-package ru.shtanko.logginstarter.webfilter;
+package ru.shtanko.loggingstarter.webfilter;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +9,8 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdviceAdapter;
-import ru.shtanko.logginstarter.properties.LoggingConfigurationProperties;
-import ru.shtanko.logginstarter.service.LoggingService;
+import ru.shtanko.loggingstarter.properties.LoggingConfigurationProperties;
+import ru.shtanko.loggingstarter.service.LoggingService;
 
 import java.lang.reflect.Type;
 
