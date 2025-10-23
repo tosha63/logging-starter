@@ -1,0 +1,169 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.shtanko",
+    "module": "logging-starter",
+    "version": "1.1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.micrometer",
+          "module": "context-propagation",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "io.micrometer",
+          "module": "micrometer-tracing-bridge-otel",
+          "version": {
+            "requires": "1.2.5"
+          }
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-exporter-otlp",
+          "version": {
+            "requires": "1.31.0"
+          }
+        },
+        {
+          "group": "net.ttddyy.observation",
+          "module": "datasource-micrometer-spring-boot",
+          "version": {
+            "requires": "1.0.5"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator",
+          "version": {
+            "requires": "3.2.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logging-starter-1.1.0-SNAPSHOT.jar",
+          "url": "logging-starter-1.1.0-SNAPSHOT.jar",
+          "size": 18870,
+          "sha512": "a150c5ec4558f3b0d2afd8065157c962ad696a50265c5b70ddef7399ae35ed111598de05a9445ccc488d87e13f49b53ab0ce4fdad2da00c36b04812d292e2602",
+          "sha256": "5c195c80cb45b63773de8100a48707e10dc493e4448ee6ba894d21a4defc3eb6",
+          "sha1": "2b630c838c8c8002ba9d9df87c8ccf71afa40f82",
+          "md5": "27e80e7a4697bc67659b8adbb01f527e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
+          "version": {
+            "requires": "3.2.5"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-aop",
+          "version": {
+            "requires": "3.2.5"
+          }
+        },
+        {
+          "group": "org.springframework.cloud",
+          "module": "spring-cloud-starter-openfeign",
+          "version": {
+            "requires": "4.1.4"
+          }
+        },
+        {
+          "group": "net.logstash.logback",
+          "module": "logstash-logback-encoder",
+          "version": {
+            "requires": "7.3"
+          }
+        },
+        {
+          "group": "org.codehaus.janino",
+          "module": "janino",
+          "version": {
+            "requires": "3.1.9"
+          }
+        },
+        {
+          "group": "io.micrometer",
+          "module": "context-propagation",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "io.micrometer",
+          "module": "micrometer-tracing-bridge-otel",
+          "version": {
+            "requires": "1.2.5"
+          }
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-exporter-otlp",
+          "version": {
+            "requires": "1.31.0"
+          }
+        },
+        {
+          "group": "net.ttddyy.observation",
+          "module": "datasource-micrometer-spring-boot",
+          "version": {
+            "requires": "1.0.5"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-actuator",
+          "version": {
+            "requires": "3.2.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logging-starter-1.1.0-SNAPSHOT.jar",
+          "url": "logging-starter-1.1.0-SNAPSHOT.jar",
+          "size": 18870,
+          "sha512": "a150c5ec4558f3b0d2afd8065157c962ad696a50265c5b70ddef7399ae35ed111598de05a9445ccc488d87e13f49b53ab0ce4fdad2da00c36b04812d292e2602",
+          "sha256": "5c195c80cb45b63773de8100a48707e10dc493e4448ee6ba894d21a4defc3eb6",
+          "sha1": "2b630c838c8c8002ba9d9df87c8ccf71afa40f82",
+          "md5": "27e80e7a4697bc67659b8adbb01f527e"
+        }
+      ]
+    }
+  ]
+}
